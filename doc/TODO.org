@@ -1,0 +1,19 @@
+TODO for blinker app
+
+* first release
+** DONE make the CSS layout work on ipods, ipads, and androids.
+*** DONE add event listener on all leds for window resize, and change style at that time.
+** DONE a play/pause and reset button.
+*** this will require injecting some kind of async into the <! (timeout) loop
+** TODO a button to temporarily and optionally show the decimal value
+** TODO proper > || and [] buttons
+*** i.e. http://openiconlibrary.sourceforge.net/gallery2/?./Icons/actions
+* later on
+** variable timeout slider
+** step forward/backward buttons
+** a lein task or compile hook to download react to cache dir
+* maybe never?
+** let people  change the color
+** maybe put a cool old IBM or IMSAI visual behind it? burnished aluminum?
+** a game, guess the binary value, with score
+*** random digits, guess those

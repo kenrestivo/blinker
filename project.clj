@@ -1,5 +1,5 @@
 (defproject blinker "0.1.0-SNAPSHOT"
-  :description "Web/mobile app for binary counting practice"
+  :description "Web app for binary counting practice and learning place value"
   :url "http://restivo.org/blinker"
 
   :dependencies [[org.clojure/clojure "1.5.1"]
@@ -10,21 +10,21 @@
                  [ankha "0.1.1"]
                  [om "0.5.0"]]
 
-  
-  :source-paths ["src"]
+
+  :source-paths ["clj-src"]
 
   :profiles {:dev {:plugins [[lein-cljsbuild "1.0.1"]]
                    :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}}
 
   
   :cljsbuild {:builds [{:id "dev" 
-                        :source-paths ["src"]
+                        :source-paths ["cljs-src"]
                         :compiler {:output-to "blinker.js"
                                    :output-dir "out"
                                    :optimizations :none
                                    :source-map  true}}
                        {:id "release"
-                        :source-paths ["src"]
+                        :source-paths ["cljs-src"]
                         :compiler {
                                    :output-to "blinker-min.js"
                                    ;; :output-wrapper true ;; don't know why this would be necessary?
