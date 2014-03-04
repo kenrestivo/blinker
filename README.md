@@ -27,7 +27,7 @@ Rather than build a hardware counter unit, since kids today are all about apps, 
 
 ## License
 
-Copyright © 2014 ken restivo <ken@restivo.org>
+Copyright © 2014 ken restivo <ken @ restivo.org>
 
 Based in part on the [binary clock app](https://github.com/fredyr/binclock) tutorial.
 
